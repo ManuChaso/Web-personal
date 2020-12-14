@@ -14,10 +14,10 @@
 	}
 	.contactsContainer{
 		width: 100%;
-		margin-left: 15%;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
 		margin-top: 50px;
+		margin-right: 17%;
 	}
 	.contactsContainer ul, li, a{
 		width: 300px;
