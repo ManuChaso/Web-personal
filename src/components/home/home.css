@@ -1,0 +1,232 @@
+@font-face{
+	font-family: "BlackkOpsOne";
+	src:url("../../assets/fonts/BlackOpsOne-Regular.ttf");
+}
+@font-face{
+	font-family: "Bungeelnline";
+	src:url("../../assets/fonts/BungeeInline-Regular.ttf");
+}
+@font-face{
+	font-family: "MontserratSubrayada";
+	src:url("../../assets/fonts/MontserratSubrayada-Bold.ttf");
+}
+@font-face{
+	font-family: "Goldman";
+	src:url("../../assets/fonts/Goldman-Regular.ttf");
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+@media (min-width: 1025px){
+	.home{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 697px;
+		background-image: url('../../assets/images/portada.jpg');
+		align-items: center;
+		justify-content: center;
+	}
+	.name{
+		display: flex;
+		justify-content: center;
+		width: 800px;
+		height: 100px;
+		color: white;
+		font-family: "MontserratSubrayada";
+		font-size: 80px;
+		text-shadow: 2px 2px 2px black;
+	}
+	.profesion{
+		width: 800px;
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		color: white;
+		font-family: "MontserratSubrayada";
+		font-size: 40px;
+		text-shadow: 2px 2px 2px black;
+	}
+	.animContainer{
+		display: flex;
+		justify-content: center;
+		width: 250px;
+		height: 40px;
+		overflow: hidden;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+	.animation{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 300px;
+		list-style: none;
+		font-size: 40px;
+		animation: 10s infinite slide;
+	}
+	.react{
+		width: 300px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		font-family: "Goldman";
+		color: rgba(0, 0, 255, 0.9);
+		text-shadow: 1px 1px 1px white;
+	}
+	.nodejs{
+		width: 300px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		font-family: "Goldman";
+		color: rgba(0, 255, 0, 0.9);
+		text-shadow: 1px 1px 1px white;
+	}
+	.express{
+		width: 300px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		font-family: "Goldman";
+		color: rgba(255, 255, 0, 0.9);
+		text-shadow: 1px 1px 1px white;
+	}
+	.mongodb{
+		width: 300px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		font-family: "Goldman";
+		color: rgba(0, 230, 0, 0.9);
+		text-shadow: 1px 1px 1px white;
+	}	
+	@keyframes slide{
+		0% {margin-top: 0px;}
+		12.5% {margin-top: -50px;}
+		25% {margin-top: -100px; }
+		37.5% {margin-top: -150px;}
+		50% {margin-top: -150px;}
+		62.5% {margin-top: -100px;}
+		75% {margin-top: -50px;}
+		87.5% {margin-top: 0px;}
+		100% {margin-top: 0px;}
+
+	}
+}
+@media (max-width: 1024px){
+	.home{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 697px;
+		background-image: url('../../assets/images/portada.jpg');
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.name{
+		display: flex;
+		justify-content: center;
+		width: 300px;
+		height: 50px;
+		margin-top: 200px;
+		color: white;
+		font-family: "MontserratSubrayada";
+		font-size: 40px;
+		text-shadow: 2px 2px 2px black;
+	}
+	.profesion{
+		width: 300px;
+		height: 40px;
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: center;
+		color: white;
+		font-family: "MontserratSubrayada";
+		font-size: 20px;
+		text-shadow: 2px 2px 2px black;
+	}
+	.animContainer{
+		display: flex;
+		justify-content: center;
+		width: 250px;
+		height: 40px;
+		overflow: hidden;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+	.animation{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 300px;
+		list-style: none;
+		font-size: 40px;
+		animation: 10s infinite slide;
+	}
+	.react{
+		width: 300px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		font-family: "Goldman";
+		color: rgba(0, 0, 255, 0.9);
+		text-shadow: 1px 1px 1px white;
+	}
+	.nodejs{
+		width: 300px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		font-family: "Goldman";
+		color: rgba(0, 255, 0, 0.9);
+		text-shadow: 1px 1px 1px white;
+	}
+	.express{
+		width: 300px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		font-family: "Goldman";
+		color: rgba(255, 255, 0, 0.9);
+		text-shadow: 1px 1px 1px white;
+	}
+	.mongodb{
+		width: 300px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		font-family: "Goldman";
+		color: rgba(0, 230, 0, 0.9);
+		text-shadow: 1px 1px 1px white;
+	}	
+	@keyframes slide{
+		0% {margin-top: 0px;}
+		12.5% {margin-top: -50px;}
+		25% {margin-top: -100px; }
+		37.5% {margin-top: -150px;}
+		50% {margin-top: -150px;}
+		62.5% {margin-top: -100px;}
+		75% {margin-top: -50px;}
+		87.5% {margin-top: 0px;}
+		100% {margin-top: 0px;}
+
+	}
+}

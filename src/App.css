@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+@font-face{
+	font-family: "Audiowide";
+	src:url("./assets/fonts/Audiowide-Regular.ttf");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+	margin: 0;
+	padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (max-width: 1024px){
+	.header{
+		display: none;
+	}
+	.headerMobile{
+		width: 100%;
+		height: 60px;
+		display: flex;
+		position: fixed;
+		align-items: center;
+		background: rgba(0, 0, 0, 0.6);
+		overflow: hidden;
+	}
+	.headerMobileOpen{
+		width: 100%;
+		height: 250px;
+		display: flex;
+		position: fixed;
+		align-items: center;
+		background: rgba(0, 0, 0, 0.6);
+		overflow: hidden;
+	}
+	.buttonNavMenu{
+		align-self: flex-start;
+		margin: 10px;
+		width: 30px;
+		height: 30px;
+	}
+	.mobileNav{
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		width: 100%;
+		margin-top: 60px;
+	}
+	.mobileNav li{
+		width: 50%;
+		margin-left: 15px;
+		margin-top: 5px;
+		color: white;
+		text-shadow: 3px 3px 3px black;
+	}
+	.mobileRrss{
+		display: flex;
+		width: 50%;
+		margin-top: 5px;
+	}
+	.mobileRrss li{
+		width: 30px;
+		margin: 5px;
+	}
+	.miweb{
+		width: 100%;
+	}
+	.navMenu{
+		background: rgba(0, 0, 0, 0.3);
+		width: 100%;
+		height: 80px;
+		position: fixed;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		list-style: none;
+	}
+	.navMenu li{
+		display: flex;
+		justify-content: center;
+		width: 150px;
+		font-family: "Audiowide";
+		font-size: 20px;
+		color: white;
+		margin: 10px;
+		text-shadow: 1px 1px 1px black;
+		transition: all 300ms;
+		cursor: default;
+	}
+	.navMenu li:hover{
+		text-shadow: 2px 3px 2px black;
+	}
+	.rrssContainer{
+		width: 20%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+	}
+	.rrssContainer li{
+		width: 30px;
+		height: 30px;
+		margin: 10px;
+	}
+	.rrss{
+		width: 30px;
+		transition: all 300ms;
+	}
+	.rrss:hover{
+		width: 35px;
+	}
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 1025px){
+	.headerMobile{
+		display: none;
+	}
+	.miweb{
+		width: 100%;
+	}
+	.navMenu{
+		background: rgba(0, 0, 0, 0.6);
+		width: 100%;
+		height: 80px;
+		position: fixed;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		list-style: none;
+	}
+	.navMenu li{
+		display: flex;
+		justify-content: center;
+		width: 150px;
+		font-family: "Audiowide";
+		font-size: 20px;
+		color: white;
+		margin: 10px;
+		text-shadow: 1px 1px 1px black;
+		transition: all 300ms;
+		cursor: default;
+	}
+	.navMenu li:hover{
+		text-shadow: 2px 3px 2px black;
+	}
+	.rrssContainer{
+		width: 20%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+	}
+	.rrssContainer li{
+		width: 30px;
+		height: 30px;
+		margin: 10px;
+	}
+	.rrss{
+		width: 30px;
+		transition: all 300ms;
+	}
+	.rrss:hover{
+		width: 35px;
+	}
 }

@@ -1,0 +1,108 @@
+@media (min-width: 1025px){
+	.portfolio{
+		margin-top: 100px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.portfolio h2{
+		display: flex;
+		justify-content: center;
+		width: 75%;
+		border-bottom: 1px solid black;
+	}
+	.projects{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.project{
+		width: 300px;
+		height: 300px;
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-shadow: 2px 2px 2px black;
+	}
+	.project img{
+		width: 300px;
+	}
+	.project h3{
+
+	}
+	.project p{
+		width: 100%;
+		height: 100px;
+		text-align: center;
+	}
+	.links{
+		width: 100%;
+		height: 70px;
+		display: flex;
+		justify-content: center;
+		align-self: flex-end;
+	}
+	.links a{
+		width: 50px;
+		height: 10px;
+		margin:10px;
+		color: blue;
+	}
+}
+@media (max-width: 1024px){
+	.portfolio{
+		margin-top: 100px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.portfolio h2{
+		display: flex;
+		justify-content: center;
+		width: 75%;
+		border-bottom: 1px solid black;
+	}
+	.projects{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.project{
+		width: 300px;
+		height: 300px;
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-shadow: 2px 2px 2px black;
+	}
+	.project img{
+		width: 300px;
+	}
+	.project h3{
+
+	}
+	.project p{
+		width: 100%;
+		height: 100px;
+		text-align: center;
+	}
+	.links{
+		width: 100%;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-self: flex-end;
+	}
+	.links a{
+		width: 50px;
+		height: 10px;
+		margin:10px;
+		color: blue;
+	}
+}
