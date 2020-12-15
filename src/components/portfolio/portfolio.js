@@ -33,7 +33,7 @@ function Portfolio() {
         img={Proyecto2}
         title="Mi Web"
         desc="Esta es la web en la que estas."
-        github=""
+        github="https://github.com/ManuChaso/Web-personal"
         demo=""/>
       </div>
     </div>
