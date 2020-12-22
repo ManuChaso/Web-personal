@@ -12,6 +12,8 @@ import About from './components/about/about';
 import Skills from './components/skills/skills';
 import Portfolio from './components/portfolio/portfolio';
 import Contact from './components/contact/contact';
+import Admin from './components/admin/admin';
+import Privacy from './components/avisoLegal/politicaDePrivacidad';
 
 const scroll = (cordX)=>{
   window.scroll({
@@ -45,31 +47,45 @@ const HeaderMobile = ()=>{
 }
 
 function App() {
-  return (
-    <div className="miweb">
-      <HeaderMobile/>
-      <header className="header">
-        <ul className="navMenu">
-          <li onClick={()=> scroll(0)}>Inicio</li>
-          <li onClick={()=> scroll(700)}>Sobre mi</li>
-          <li onClick={()=> scroll(1100)}>Skills</li>
-          <li onClick={()=> scroll(1650)}>Portafolios</li>
-          <li onClick={()=> scroll(2000)}>Contacto</li>
-          <ul className="rrssContainer">
-            <li><a href="https://www.instagram.com/manuchaso_web/?hl=es" target="_blank" rel="noreferrer"><img className="rrss" src={Instagram} alt="icono de instagram"/></a></li>
-            <li><a href="https://twitter.com/Manuchaso_web" target="_blank" rel="noreferrer"><img className="rrss" src={Twitter} alt="icono de twitter"/></a></li>
-            <li><a href="https://www.linkedin.com/in/manu-chaso-martin" target="_blank" rel="noreferrer"><img className="rrss" src={Linkedin} alt="icono de linkedin"/></a></li>
-            <li><a href="https://github.com/ManuChaso" target="_blank" rel="noreferrer"><img className="rrss" src={Github} alt="icono de github"/></a></li>
+  if(window.location.pathname === "/admin"){
+    return(
+      <div>
+        <Admin/>
+      </div>
+    );
+  }
+  else if( window.location.pathname === "/politica-de-privacidad"){
+    return(
+      <div>
+        <Privacy/>
+      </div>);
+  }else{
+      return (
+        <div className="miweb">
+          <HeaderMobile/>
+          <header className="header">
+            <ul className="navMenu">
+              <li onClick={()=> scroll(0)}>Inicio</li>
+              <li onClick={()=> scroll(700)}>Sobre mi</li>
+              <li onClick={()=> scroll(1100)}>Skills</li>
+              <li onClick={()=> scroll(1650)}>Portafolios</li>
+              <li onClick={()=> scroll(2000)}>Contacto</li>
+            <ul className="rrssContainer">
+              <li><a href="https://www.instagram.com/manuchaso_web/?hl=es" target="_blank" rel="noreferrer"><img className="rrss" src={Instagram} alt="icono de instagram"/></a></li>
+              <li><a href="https://twitter.com/Manuchaso_web" target="_blank" rel="noreferrer"><img className="rrss" src={Twitter} alt="icono de twitter"/></a></li>
+              <li><a href="https://www.linkedin.com/in/manu-chaso-martin" target="_blank" rel="noreferrer"><img className="rrss" src={Linkedin} alt="icono de linkedin"/></a></li>
+              <li><a href="https://github.com/ManuChaso" target="_blank" rel="noreferrer"><img className="rrss" src={Github} alt="icono de github"/></a></li>
+            </ul>
           </ul>
-        </ul>
-      </header>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Portfolio/>
-      <Contact/>
-    </div>
-  );
+          </header>
+          <Home/>
+          <About/>
+          <Skills/>
+          <Portfolio/>
+          <Contact/>
+        </div>
+      );
+  }
 }
 
 export default App;
