@@ -17,9 +17,9 @@ const sendMessage = (message)=>{
     fetch("https://manuchasoapi.herokuapp.com/send-message",{
         method: "POST",
         body: {
-            name: JSON.stringify(message.name),
-            email: JSON.stringify(message.email),
-            text: JSON.stringify(message.text)
+            name: message.name,
+            email: message.email,
+            text: message.text
         },
         headers:{
             "Content-Type": "application/json",
