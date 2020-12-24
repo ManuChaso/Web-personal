@@ -22,7 +22,8 @@ const sendMessage = (message)=>{
             text: JSON.stringify(message.text)
         },
         headers:{
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Accept": "application/json"
         }
     })
     .then(response => console.log(response))
