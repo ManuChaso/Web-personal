@@ -12,8 +12,9 @@ import About from './components/about/about';
 import Skills from './components/skills/skills';
 import Portfolio from './components/portfolio/portfolio';
 import Contact from './components/contact/contact';
-import Admin from './components/admin/admin';
-import Privacy from './components/avisoLegal/politicaDePrivacidad';
+import Admin from './admin/admin/admin';
+import Privacy from './screens/avisoLegal/politicaDePrivacidad';
+import MessageSent from './screens/messageSent/messageSent';
 
 const scroll = (cordX)=>{
   window.scroll({
@@ -52,6 +53,11 @@ function App() {
       <div>
         <Admin/>
       </div>
+    );
+  }
+  else if(window.location.pathname === "/mensaje-enviado"){
+    return(
+      <MessageSent/>
     );
   }
   else if( window.location.pathname === "/politica-de-privacidad"){

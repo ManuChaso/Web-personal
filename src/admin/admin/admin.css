@@ -1,0 +1,112 @@
+.admin{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.admin h2{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: rgb(100, 100, 255);
+	color: white;
+}
+.admin ul{
+	width: 100%;
+	background: rgb(100, 100, 255);
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+.admin li{
+	margin: 10px;
+	border-radius: 10px;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	background: rgb(150, 150, 255);
+	color: white;
+}
+.messages{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.message{
+	width: 70%;
+	margin: 10px;
+	border-radius: 25px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	background: rgb(230, 230, 230);
+}
+.message button{
+	width: 80px;
+	margin: 10px;
+	border: none;
+	border-radius: 5px;
+	background: rgb(255, 50, 50);
+	color: white;
+	align-self: flex-end;
+}
+.message h3{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.message h4{
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+.message h5{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.message p{
+	width: 100%;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+.message h6{
+	margin: 10px;
+	align-self: flex-end;
+}
+.login{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	border-radius: 20px;
+	background: rgb(100, 100, 255);
+}
+.login h2{
+	font-size: 30px;
+	margin-top: 20px;
+	color: white;
+}
+.login input{
+	width: 350px;
+	height: 35px;
+	border: none;
+	border-radius: 10px;
+	margin: 20px;
+}
+.login button{
+	width: 150px;
+	height: 25px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	color: white;
+	background: rgb(150, 150, 255);
+}

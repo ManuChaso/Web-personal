@@ -6,6 +6,8 @@ import Twitter from '../../assets/images/twitter.png';
 import Linkedin from '../../assets/images/linkedin.png';
 import Github from '../../assets/images/github.png';
 
+import ApiCalls from '../../api/api_calls';
+
 const verify = (message)=>{
     if(!message.name || !message.email || !message.text) return false;
     else{
@@ -13,18 +15,6 @@ const verify = (message)=>{
     }
 }
 
-const sendMessage = (message)=>{
-    fetch("https://manuchasoapi.herokuapp.com/send-message",{
-        method: "POST",
-        body: message,
-        headers:{
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        }
-    })
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
-}
 
 function Contact() {
     const [name, setName] = useState("");
@@ -46,7 +36,7 @@ function Contact() {
             const verified = verify(message);
             if(verified){
                 setError("");
-                sendMessage(message);
+                ApiCalls.sendMessage(message);
             }else{
                 setError("Debes completar todos los campos");
             }
@@ -59,9 +49,9 @@ function Contact() {
     <div className="contact">
     	<h2>Contacto</h2>
         <form className="form" onSubmit={e => submitForm(e)}>
-            <input className="input" type="text" placeholder="Nombre" onChange={e => setName(e.target.value)}/>
-            <input className="input" type="email" placeholder="Email" onChange={e => setEmail(e.target.value)}/>
-            <textarea placeholder="Mensaje..." onChange={e => setText(e.target.value)}></textarea>
+            <input className="input" type="text" placeholder="Nombre" value={name} onChange={e => setName(e.target.value)}/>
+            <input className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}/>
+            <textarea placeholder="Mensaje..." value={text} onChange={e => setText(e.target.value)}></textarea>
              <p className="error">{error}</p>
             <div>
                 <input className="checkbox" type="checkbox" id="privacy" name="privacy" onChange={()=> setAccept(!accept)}/>

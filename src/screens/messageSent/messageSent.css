@@ -1,0 +1,50 @@
+@media (min-width: 1025px){
+	.messageSent{
+		width: 100%;
+		margin-top: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.messageSent h2{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.messageSent h3{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.messageSent button{
+		width: 200px;
+		height: 30px;
+		border: none;
+		border-radius: 10px;
+		background: rgb(100, 100, 255);
+	}
+}
+@media (max-width: 1024px){
+	.messageSent{
+		width: 100%;
+		margin-top: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.messageSent h2{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.messageSent h3{
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	.messageSent button{
+		width: 200px;
+		height: 30px;
+		border: none;
+		border-radius: 10px;
+		background: rgb(100, 100, 255);
+	}
+}

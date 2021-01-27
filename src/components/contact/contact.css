@@ -1,7 +1,6 @@
 @media (min-width: 1025px){
 	.contact{
 		margin-top: 100px;
-		margin-bottom: 100px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -56,15 +55,18 @@
 	}
 	.contactsContainer{
 		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		display: flex;
 		justify-content: center;
 		margin-top: 50px;
+		background: rgba(0, 0, 0, 0.7);
 	}
 	.contactsContainer ul, li, a{
 		width: 150px;
 		list-style: none;
 		text-decoration: none;
-		color: black;
+		color: white;
 	}
 	.contactIcon{
 		width: 20px;
