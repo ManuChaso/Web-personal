@@ -75,7 +75,6 @@
 @media (max-width: 1024px){
 	.contact{
 		margin-top: 100px;
-		margin-bottom: 100px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -92,7 +91,7 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.form input{
+	input{
 		width: 200px;
 		height: 10px;
 		margin: 10px auto;
@@ -117,18 +116,33 @@
 		border-radius: 10px;
 		background: rgb(220, 220, 220);
 	}
+	.checkbox{
+		width: 10px;
+		margin: 10px;
+	}
+	.form label a{
+		color: blue;
+	}
+	.form label{
+		font-size: 15px;
+	}
 	.contactsContainer{
 		width: 100%;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: center;
 		align-items: center;
 		margin-top: 50px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background: rgba(0, 0, 0, 0.7);
 	}
 	.contactsContainer ul, li, a{
-		width: 250px;
+		width: 120px;
+		margin: 5px;
 		list-style: none;
 		text-decoration: none;
-		color: black;
+		color: white;
 	}
 	.contactIcon{
 		width: 20px;

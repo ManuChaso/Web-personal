@@ -4,11 +4,11 @@ import './admin.css';
 import MessageAdmin from './message_admin';
 import PortfolioAdmin from './portfolio_admin';
 import Login from './login.js';
-import ApiCalls from '../../api/api_calls';
 
 function Admin() {
   const [screen, setScreen] = useState("messages");
-  const [verify, setVerify] = useState(localStorage.getItem("Token"));
+  
+  const verify = localStorage.getItem("Token");
 
   if(verify){
     return (

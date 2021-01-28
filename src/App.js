@@ -33,9 +33,9 @@ const HeaderMobile = ()=>{
       <ul className="mobileNav">
           <li onClick={()=>{ scroll(0); setOpen(!open)}}>Inicio</li>
           <li onClick={()=>{ scroll(700); setOpen(!open)}}>Sobre mi</li>
-          <li onClick={()=>{ scroll(1100); setOpen(!open)}}>Skills</li>
-          <li onClick={()=>{ scroll(1800); setOpen(!open)}}>Portafolios</li>
-          <li onClick={()=>{ scroll(2400); setOpen(!open)}}>Contacto</li>
+          <li onClick={()=>{ scroll(1120); setOpen(!open)}}>Skills</li>
+          <li onClick={()=>{ scroll(1900); setOpen(!open)}}>Portafolios</li>
+          <li onClick={()=>{ scroll(2800); setOpen(!open)}}>Contacto</li>
           <ul className="mobileRrss">
             <li><a href="https://www.instagram.com/manuchaso_web/?hl=es" target="_blank" rel="noreferrer"><img className="rrss" src={Instagram} alt="icono de instagram"/></a></li>
             <li><a href="https://twitter.com/Manuchaso_web" target="_blank" rel="noreferrer"><img className="rrss" src={Twitter} alt="icono de twitter"/></a></li>
@@ -75,7 +75,7 @@ function App() {
               <li onClick={()=> scroll(700)}>Sobre mi</li>
               <li onClick={()=> scroll(1100)}>Skills</li>
               <li onClick={()=> scroll(1650)}>Portafolios</li>
-              <li onClick={()=> scroll(2000)}>Contacto</li>
+              <li onClick={()=> scroll(2150)}>Contacto</li>
             <ul className="rrssContainer">
               <li><a href="https://www.instagram.com/manuchaso_web/?hl=es" target="_blank" rel="noreferrer"><img className="rrss" src={Instagram} alt="icono de instagram"/></a></li>
               <li><a href="https://twitter.com/Manuchaso_web" target="_blank" rel="noreferrer"><img className="rrss" src={Twitter} alt="icono de twitter"/></a></li>
